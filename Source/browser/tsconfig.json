@@ -1,8 +1,20 @@
 {
-	"extends": "../../tsconfig.base.json",
 	"compilerOptions": {
-		"lib": ["es5", "dom"],
-		"outDir": "../../lib/browser"
+		"baseUrl": "./",
+		"lib": [
+			"es5",
+			"dom"
+		],
+		"outDir": "Target",
+		"rootDir": "src"
 	},
-	"references": [{ "path": "../common/tsconfig.json" }]
+	"extends": "@playform/build/tsconfig",
+	"include": [
+		"src"
+	],
+	"references": [
+		{
+			"path": "../common/tsconfig.json"
+		}
+	]
 }

@@ -1,6 +1,28 @@
 {
 	"name": "@codeeditorland/nls",
+	"version": "0.0.1",
+	"private": false,
 	"description": "NPM module to externalize and localize VSCode extensions",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandNls#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandNls/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandNls.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "./lib/node/main.js",
 	"browser": {
 		"./lib/node/main.js": "./lib/browser/main.js"
@@ -20,11 +42,15 @@
 	"scripts": {
 		"clean": "rimraf lib",
 		"compile": "tsc -b ./tsconfig.json",
-		"prepublishOnly": "npm run clean && npm run compile && npm run lint && npm run test"
+		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"dependencies": {},
 	"devDependencies": {
+		"@playform/build": "0.2.1",
 		"@types/node": "22.13.14",
 		"rimraf": "6.0.1"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }

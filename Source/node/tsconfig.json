@@ -1,9 +1,22 @@
 {
-	"extends": "../../tsconfig.base.json",
 	"compilerOptions": {
-		"outDir": "../../lib/node",
-		"types": ["node"]
+		"baseUrl": "./",
+		"outDir": "Target",
+		"rootDir": "src",
+		"types": [
+			"node"
+		]
 	},
-	"exclude": ["test"],
-	"references": [{ "path": "../common/tsconfig.json" }]
+	"exclude": [
+		"test"
+	],
+	"extends": "@playform/build/tsconfig",
+	"include": [
+		"src"
+	],
+	"references": [
+		{
+			"path": "../common/tsconfig.json"
+		}
+	]
 }
