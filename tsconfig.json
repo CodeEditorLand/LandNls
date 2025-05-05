@@ -1,31 +1,11 @@
 {
-	"compilerOptions": {
-		"baseUrl": "./",
-		"outDir": "Target",
-		"rootDir": "src"
-	},
-	"extends": "@playform/build/tsconfig",
-	"files": [],
-	"include": [
-		"src",
-		"src",
-		"src"
-	],
-	"references": [
-		{
-			"path": "./src/common/tsconfig.json"
-		},
-		{
-			"path": "./src/node/tsconfig.json"
-		},
-		{
-			"path": "./src/browser/tsconfig.json"
-		},
-		{
-			"path": "./src/node/test/tsconfig.json"
-		},
-		{
-			"path": "./src/test/tsconfig.json"
-		}
-	]
+    "extends": "./tsconfig.base.json",
+    "files": [],
+    "references": [
+        { "path": "./src/common/tsconfig.json" },
+        { "path": "./src/node/tsconfig.json" },
+        { "path": "./src/browser/tsconfig.json" },
+        { "path": "./src/node/test/tsconfig.json" },
+        { "path": "./src/test/tsconfig.json" }
+    ]
 }
